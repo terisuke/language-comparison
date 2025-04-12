@@ -1,0 +1,44 @@
+# Elixir
+/elixir/_build/
+/elixir/deps/
+/elixir/.elixir_ls/
+
+# Python
+/python/__pycache__/
+/python/*.py[cod]
+/python/*$py.class
+/python/.Python
+/python/venv/
+/python/.env
+/python/.venv
+/python/env/
+/python/.env/
+/python/.venv/
+
+# TypeScript/Node.js
+/typescript/node_modules/
+/typescript/dist/
+/typescript/.env
+/typescript/.env.local
+/typescript/.env.development.local
+/typescript/.env.test.local
+/typescript/.env.production.local
+/typescript/npm-debug.log*
+/typescript/yarn-debug.log*
+/typescript/yarn-error.log*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~ 
