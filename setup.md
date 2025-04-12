@@ -100,7 +100,7 @@ npx ts-node index.ts
 各言語で同じ例を順番に実行し、出力結果やコードの書き方の違いを比較説明できます：
 
 1. Elixir: `iex -S mix` で対話型シェルを起動し、`Examples.run_examples()` を実行
-2. Python: `python examples.py` を実行
+2. Python: `python3 examples.py` を実行
 3. TypeScript: `npx ts-node index.ts` を実行
 
 これらを並べて見せることで、各言語の特徴や違いが明確になります。

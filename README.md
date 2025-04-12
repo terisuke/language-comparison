@@ -81,7 +81,7 @@ iex -S mix
 ### Python
 ```bash
 cd python
-python examples.py
+python3 examples.py
 ```
 
 ### TypeScript
