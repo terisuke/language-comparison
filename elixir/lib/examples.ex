@@ -15,10 +15,12 @@ defmodule Examples do
   # 1. 文字列処理とパイプ演算子
   def string_processing do
     IO.puts("\n1. String Processing:")
-    result = ["hello", "world", "elixir", "python", "typescript"]
-    |> Enum.map(&String.upcase/1)
-    |> Enum.filter(&(String.length(&1) > 5))
-    |> Enum.join(" ")
+
+    result =
+      ["hello", "world", "elixir", "python", "typescript"]
+      |> Enum.map(&String.upcase/1)
+      |> Enum.filter(&(String.length(&1) > 5))
+      |> Enum.join(" ")
 
     IO.puts("Result: #{result}")
   end
@@ -55,8 +57,10 @@ defmodule Examples do
     case user do
       %{role: "admin"} = admin ->
         IO.puts("Admin user: #{admin.name}")
+
       %{age: age} when age >= 18 ->
         IO.puts("Adult user: #{user.name}")
+
       _ ->
         IO.puts("Other user")
     end
@@ -75,6 +79,7 @@ defmodule Examples do
   # 5. メタプログラミング
   def metaprogramming do
     IO.puts("\n5. Metaprogramming:")
+
     defmodule DynamicModule do
       defmacro create_function(name) do
         quote do
@@ -87,7 +92,7 @@ defmodule Examples do
 
     defmodule Example do
       import DynamicModule
-      create_function :hello
+      create_function(:hello)
     end
 
     Example.hello()
